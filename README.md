@@ -51,7 +51,7 @@ In the second graph
 - H_max: maximum H_12 value usually found inside the LSB for low Reynolds number flows.
 - P2/P1: Momentum defect across the laminar separation bubble. [Ref_1]
 
-## 1. vplo_plot.py
+## 2. vplo_plot.py
 
 This is ideally an extension to the above if one finds a severe bubble loss at a design point. And it's best to limit its feed by probably copying the files of interest into a separate folder. 
 
