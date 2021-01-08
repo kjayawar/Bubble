@@ -22,6 +22,19 @@ This will sequence through a set of alphas or cls and dump boundary layer profil
 ```python
 python -i aseq_analysis.py
 ```
+
+The Function signature is as follows
+```python
+xfoil_seq(airfoil, oper_type, reynolds_number, command, invoke_xfoil=True, smoothing=False, remove_bubble=True)
+```
+- airfiol is the airfoil name without .dat
+- oper_type is the xfoil polar type
+- RE: self-explanatory
+- command : command to send to xfoil - ex; aseq 0 10 .5
+- invoke_xfoil: if the BL dump files are already available no need to run xfoil
+- smoothing: recommended for Wortmann airfoils for example
+- remove_bubble: a separate target polar will be generated indicating what will happen if the bubble is removed by the forced transition.
+
 ![alt text](https://github.com/kjayawar/Bubble/blob/main/BL_Sepration_limits_and_Transition.png?raw=true)
 ![alt text](https://github.com/kjayawar/Bubble/blob/main/CD-CDpSummary_and_Bubble_Contribution.png?raw=true)
 
@@ -52,9 +65,7 @@ python vplo_plot.py
 
 
 ## Contributing
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
-
-Please make sure to update tests as appropriate.
+Pull requests or any suggestions for improvements are welcome.
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
