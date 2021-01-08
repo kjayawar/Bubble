@@ -35,8 +35,8 @@ xfoil_seq(airfoil, oper_type, reynolds_number, command, invoke_xfoil=True, smoot
 - smoothing: recommended for Wortmann airfoils for example
 - remove_bubble: a separate target polar will be generated indicating what will happen if the bubble is removed by the forced transition.
 
-![alt text](https://github.com/kjayawar/Bubble/blob/main/BL_Sepration_limits_and_Transition.png?raw=true)
-![alt text](https://github.com/kjayawar/Bubble/blob/main/CD-CDpSummary_and_Bubble_Contribution.png?raw=true)
+<img src="https://github.com/kjayawar/Bubble/blob/main/BL_Sepration_limits_and_Transition.png?raw=true" width="45%"></img> 
+<img src="https://github.com/kjayawar/Bubble/blob/main/CD-CDpSummary_and_Bubble_Contribution.png?raw=true" width="45%"></img> 
 
 In the first graph
 - x-tr is the transition location.
