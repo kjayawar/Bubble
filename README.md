@@ -85,11 +85,11 @@ with the constant of proportionality A being somewhat dependent on the
 particular airfoil. Things get increasingly bad increasingly rapidly
 as H_max increases. Some rules of thumb I use:
 
-H_max = 4 Ideal minimum drag situation.
-H_max = 5 CD_bubble almost negligible.
-H_max = 6 CD_bubble noticable, but may be tolerable.
-H_max = 7 CD_bubble is a sizable fraction of total CD. Not good.
-H_max > 8 CD_bubble dominates total CD. Really awful.
+H_max = 4 Ideal minimum drag situation.   
+H_max = 5 CD_bubble almost negligible.   
+H_max = 6 CD_bubble noticable, but may be tolerable.   
+H_max = 7 CD_bubble is a sizable fraction of total CD. Not good.    
+H_max > 8 CD_bubble dominates total CD. Really awful.   
 
 
 H_max will normally change with angle of attack in non-simple manner
