@@ -62,7 +62,45 @@ python vplo_plot.py
 <img src="https://github.com/kjayawar/Bubble/blob/main/xfoil_bl_data_upper_surface.png?raw=true" width="45%"></img> 
 <img src="https://github.com/kjayawar/Bubble/blob/main/xfoil_bl_data_lower_surface.png?raw=true" width="45%"></img> 
 
+## Reference 
+[1] XFOIL Yahoo group Message number 150
 
+drela@mit.edu   
+Feb 28, 2001
+
+You can look at either the Cf(x) plot or the H(x) plot, both in the
+VPLO sub-menu in OPER. The bubble has Cf < 0, and approximately H > 4
+over its extent.
+
+I should point out that the length of the bubble does not directly
+influence how draggy it is. By far the best "badness" indicator of a
+bubble is the maximum value of H it has, which typically occurs just
+before reattachment at the end of the bubble. If H_max < 4, there is
+no laminar separation and no bubble. For H_max > 4, the bubble loss
+(additional CD suffered by the airfoil) can be approximated by
+
+CD_bubble = A *(H_max - 4)^2
+
+with the constant of proportionality A being somewhat dependent on the
+particular airfoil. Things get increasingly bad increasingly rapidly
+as H_max increases. Some rules of thumb I use:
+
+H_max = 4 Ideal minimum drag situation.
+H_max = 5 CD_bubble almost negligible.
+H_max = 6 CD_bubble noticable, but may be tolerable.
+H_max = 7 CD_bubble is a sizable fraction of total CD. Not good.
+H_max > 8 CD_bubble dominates total CD. Really awful.
+
+
+H_max will normally change with angle of attack in non-simple manner
+depending on the airfoil Cp distribution. H_max will always increase
+with decreasing Reynolds number and increasing Ncrit. It is very
+desirable for H_max to hover right around 4 over most of its alpha
+range. Michael Selig's more recent design approach seeks to control
+the H values directly, and thus allows control of the bubble drag
+among other things.
+
+- Mark
 
 ## Contributing
 Pull requests or any suggestions for improvements are welcome.
